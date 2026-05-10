@@ -1,0 +1,20 @@
+name: Validate catalog
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Run validator tests
+        run: ruby test/validate_catalog_test.rb
+
+      - name: Validate catalog
+        run: ruby scripts/validate_catalog.rb .
