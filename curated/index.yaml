@@ -1,0 +1,14 @@
+schema_version: 1
+curated:
+  docs:
+    target: zack-nova/docs
+    status: active
+  product-lab:
+    target: zack-nova/product-lab
+    status: active
+  release:
+    target: zack-nova/release
+    status: active
+  review:
+    target: zack-nova/review
+    status: active

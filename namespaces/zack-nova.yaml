@@ -1,0 +1,6 @@
+schema_version: 1
+namespace: zack-nova
+owners:
+  - platform: github
+    owner: zack-nova
+status: active

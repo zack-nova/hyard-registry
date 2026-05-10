@@ -1,0 +1,99 @@
+schema_version: 1
+namespace: zack-nova
+packages:
+  docs:
+    handle: zack-nova/docs
+    status: active
+    package:
+      type: orbit
+      name: docs
+    source:
+      repository: https://github.com/zack-nova/hyard-demo-docs-orbit
+    dist_tags:
+      latest: "0.1.0"
+    versions:
+      "0.1.0":
+        locator:
+          kind: git
+          repository: https://github.com/zack-nova/hyard-demo-docs-orbit
+          ref: orbit-template/docs
+          commit: c822a9f4a6d2853b30dc23d5fbf90c5fb5be7c31
+        validation:
+          remote_ref: refs/heads/orbit-template/docs
+          manifest: .harness/manifest.yaml
+          package_manifest: .harness/orbits/docs.yaml
+          package_identity:
+            type: orbit
+            name: docs
+  product-lab:
+    handle: zack-nova/product-lab
+    status: active
+    package:
+      type: harness
+      name: hyard-demo-product-lab
+    source:
+      repository: https://github.com/zack-nova/hyard-demo-product-lab
+    dist_tags:
+      latest: "0.1.0"
+    versions:
+      "0.1.0":
+        locator:
+          kind: git
+          repository: https://github.com/zack-nova/hyard-demo-product-lab
+          ref: harness-template/product-lab
+          commit: 7760299002a8ebd249899d5bacbf1340022fd25b
+        validation:
+          remote_ref: refs/heads/harness-template/product-lab
+          manifest: .harness/manifest.yaml
+          package_manifest: .harness/template.yaml
+          package_identity:
+            type: harness
+            name: hyard-demo-product-lab
+  release:
+    handle: zack-nova/release
+    status: active
+    package:
+      type: orbit
+      name: release
+    source:
+      repository: https://github.com/zack-nova/hyard-demo-release-orbit
+    dist_tags:
+      latest: "0.1.0"
+    versions:
+      "0.1.0":
+        locator:
+          kind: git
+          repository: https://github.com/zack-nova/hyard-demo-release-orbit
+          ref: orbit-template/release
+          commit: 5333ca1319fdd114a69d8229a088ef22e18f4bbc
+        validation:
+          remote_ref: refs/heads/orbit-template/release
+          manifest: .harness/manifest.yaml
+          package_manifest: .harness/orbits/release.yaml
+          package_identity:
+            type: orbit
+            name: release
+  review:
+    handle: zack-nova/review
+    status: active
+    package:
+      type: orbit
+      name: review
+    source:
+      repository: https://github.com/zack-nova/hyard-demo-review-orbit
+    dist_tags:
+      latest: "0.1.0"
+    versions:
+      "0.1.0":
+        locator:
+          kind: git
+          repository: https://github.com/zack-nova/hyard-demo-review-orbit
+          ref: orbit-template/review
+          commit: fab99ed3a0cc2421e552e54b4bc2d4ffebca2a54
+        validation:
+          remote_ref: refs/heads/orbit-template/review
+          manifest: .harness/manifest.yaml
+          package_manifest: .harness/orbits/review.yaml
+          package_identity:
+            type: orbit
+            name: review
