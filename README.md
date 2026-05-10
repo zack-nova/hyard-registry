@@ -31,6 +31,8 @@ CONTEXT.md
 - `curated/` contains unnamespaced official or curated handles such as `docs`.
 - `docs/adr/` records registry-specific catalog decisions.
 - `docs/source-contract.md` records the operating contract for this repository.
+- `docs/submission-review-policy.md` explains author submissions and maintainer
+  review policy.
 
 The Harness Yard CLI source repository owns the registry schema, resolver code,
 candidate-generation behavior, and package installation semantics. This
