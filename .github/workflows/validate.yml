@@ -22,3 +22,14 @@ jobs:
 
       - name: Validate catalog
         run: ruby scripts/validate_catalog.rb .
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.26.x"
+
+      - name: Install hyard
+        run: go install github.com/zack-nova/harnessyard/cmd/hyard@main
+
+      - name: Revalidate registry entries
+        run: HYARD_BIN="$(go env GOPATH)/bin/hyard" ruby scripts/revalidate_catalog.rb .
